@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+.navbar-brand {
+    font-family: 'Courgette', cursive;
+}
+.navbar-brand {
+    font-style: bold;
+}
+
+.aboutMePhoto {
+    float: left;
+}
+
+.card{
+    float: right;
+}
+
+
+  .footerText {
+      text-align: center;
+  }
+
+.card-body {
+    display: inline-block
+}
+
+.gitimage {
+    height: 30px
+    width: 30px;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap Demo</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <!-- Create full width navbar with dark theme (navbar-dark & bg-dark)-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Wrap nav content in container so it all fits to margins -->
+    <div class="container">
+      <!-- This is for the logo area -->
+      <a class="navbar-brand" href="#">Paolo Andrade</a>
+
+      <!-- This doesn't show up until the screen gets smaller (hamburger menu icon) -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Holds all nav content and hides it when screen gets small (collapse class) -->
+      <!-- this id is needed for above button's data-target (so it knows what to open when button is clicked) -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- use list to hold all nav items, ml-auto (margin-left: auto) -->
+        <ul class="navbar-nav ml-auto">
+          <!-- each nav section gets (nav-item) class -->
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <!-- sr-only means only show on screens -->
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <!-- Dropdown menus (needs jQuery) are created from nested list items -->
+          <li class="nav-item dropdown">
+            <!-- Top level menu item, when clicked will open up contents of .dropdown-menu -->
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <!-- All of the submenu (dropdown) content -->
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <!-- Inline form element (doesn't work, for display only) -->
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- full width jumbotron with red background -->
+  <div class="jumbotron-fluid bg-danger">
+    <!-- keep all content to margins -->
+    <div class="container">
+      <!-- create a row for content, justify (left/right) and align (top/bottom) all content to the center of container, use pt-4 and pt-4 for padding-top/bottom  -->
+      <div class="row justify-content-center pt-4 pb-4 align-items-center">
+        <!-- Create one column that's not full width on bigger screens (laptops) but goes full width when smaller -->
+        <div class="col-md-7 col-sm-12 text-center">
+          <h1 class="display-4">Hello, world!</h1>
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content
+            or information.
+          </p>
+          <!-- Create a horizontal rule with my-4 (margin y-axis (top/bottom) - 4) -->
+          <hr class="my-4">
+          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+          <p class="lead">
+            <a class="btn btn-outline-dark btn-block" href="#" role="button">Learn more</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END JUMBOTRON SECTION -->
+
+
+<!-- Create a new container for all "main content" to live in with margin top/bottom -->
+  <div class="container my-5">
+    <!-- Wrap main body with a row -->
+    <div class="row">
+      <!-- Main-body left column (spans 8 cols on laptop, full width (12 cols) on phone/tablet) -->
+      <div class="col-md-8 col-sm-12">
+        <h2 class="display-4">About Me</h2>
+        <p class="lead">
+          This is a lead tag, gives it some nice "subtitle-y" type feeling.
+        </p>
+        <hr class="my-4">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit quia rerum facere, voluptatibus amet voluptas
+          tempore officiis enim molestias aspernatur, sapiente animi eius tenetur non aliquam. Excepturi cum dolorem aliquam.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit quia rerum facere, voluptatibus amet voluptas
+          tempore officiis enim molestias aspernatur, sapiente animi eius tenetur non aliquam. Excepturi cum dolorem aliquam.
+        </p>
+        <!-- Create a sub-row inside of left-column -->
+        <div class="row">
+          <!-- Column that's half width of left-column on laptops, full width of left-column on smaller devices -->
+          <div class="col-md-6 col-sm-12">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor doloremque voluptatibus, soluta facere rerum nisi praesentium. Ad, numquam provident. Debitis impedit aliquid sit obcaecati cumque error fuga possimus mollitia officiis.
+            </p>
+          </div>
+
+          <!-- Column that's half width of left-column on laptops, full width of left-column on smaller devices -->
+          <div class="col-md-6 col-sm-12">
+            <!-- Just a list copied from bootstrap -->
+            <ul class="list-unstyled">
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Integer molestie lorem at massa</li>
+              <li>Facilisis in pretium nisl aliquet</li>
+              <li>Nulla volutpat aliquam velit
+                <ul>
+                  <li>Phasellus iaculis neque</li>
+                  <li>Purus sodales ultricies</li>
+                  <li>Vestibulum laoreet porttitor sem</li>
+                  <li>Ac tristique libero volutpat at</li>
+                </ul>
+              </li>
+              <li>Faucibus porta lacus fringilla vel</li>
+              <li>Aenean sit amet erat nunc</li>
+              <li>Eget porttitor lorem</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Close out left-column's inner-row -->
+      </div>
+      <!-- Close out left-column entirely -->
+
+      <!-- Main-body right-column (spans 4 columns on laptops but full width (12 col) on smaller devices) -->
+      <div class="col-md-4 col-sm-12">
+        <!-- Creates a card -->
+        <div class="card">
+          <!-- Creates a card-header -->
+          <div class="card-header">Hey there, I'm a header</div>
+          <!-- Creates a card-body -->
+          <div class="card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates earum labore sequi quis velit aut deserunt placeat quaerat, omnis, error eius officiis itaque cum, nisi quas explicabo. Dolor, ducimus sapiente.</p>
+          </div>
+
+        </div>
+      </div>
+      <!-- Close out right-column -->
+    </div>
+    <!-- Close out main-body row -->
+
+  </div>
+  <!-- Close out container -->
+
+  <!-- Full width footer area -->
+  <div class="jumbotron-fluid bg-danger p-3 text-center">
+    <h3>&copy;2018 Alex Rosenkranz</h3>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

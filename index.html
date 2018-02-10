@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boostrap-Portfolio</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Wrap nav content in container so it all fits to margins -->
+        <div class="container">
+          <!-- This is for the logo area -->
+          <a class="navbar-brand" href="#">Paolo Andrade</a>
+
+      <!--(hamburger menu icon) -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- use list to hold all nav items, ml-auto (margin-left: auto) -->
+        <ul class="navbar-nav ml-auto">
+          <!-- each nav section gets (nav-item) class -->
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About |
+              <!-- sr-only means only show on screens -->
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio |</a>
+          </li>
+          
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Contact</a>
+          </li>
+        </ul>
+
+
+      </div>
+    </div>
+  </nav>
+  <hr>
+  <div class="container my-5">
+    <!-- Wrap main body with a row -->
+    <div class="row">
+      <!-- Main-body left column (spans 8 cols on laptop, full width (12 cols) on phone/tablet) -->
+      <div class="col-md-8 col-md-12">
+        <h2 class="display-4">About Me</h2>
+        <hr>
+          <!-- Create a sub-row inside of left-column -->
+          <div class="row">
+
+            <!-- Column that's half width of left-column on laptops, full width of left-column on smaller devices -->
+
+            <!-- Start of Paragraph in the body -->
+            <div class="col-md-6 col-sm-12">
+              <p>
+                A Nursing student turned techy. In the middle of pursuing nursing school Paolo decided that nursing is not for him. Instead decided to jump into tech by going to Lincoln Technical Institute in Edison, NJ for Networking and Communications. After finishing school he immediately got hired at Summit Medical Group as a help desk analyst which jump-started his career in Tech.
+              </p>
+                          <!-- Picture Placeholder -->
+            <div class="aboutMePhoto">
+                <img src="http://placehold.it/230x230" alt="placeholder profile picture">
+                </div>
+              <p>
+              With that experience, he continues to land similar jobs within the Application installer, project manager, and technical trainer roles. Now, he is striving to be more involved in creating web applications because of his experience in supporting a wide variety of web applications. Find out more about Paolo through this page as he progresses through the Rutgers Web Development Program. 
+
+            </p>
+            <!-- closing inside row -->
+</div>
+      <!-- Main-body right-column (spans 4 columns on laptops but full width (12 col) on smaller devices) -->
+      <div class="col-md-4 col-sm-12">
+          <!-- Creates a card -->
+          <div class="card">
+            <!-- Creates a card-header -->
+            <div class="card-header">Connect With Me</div>
+            <!-- Creates a card-body -->
+            <div class="card-body">
+                <img src="./images/github.png" alt="Github Icon" class="gitimage">
+                <img src="./images/linkedin.png" alt="Linkedin" class="linkedimage">
+                <img src="./images/stackoverflow.png" alt="Stack" class="stackimage">
+              
+          </div>
+        </div>
+        <!-- Close out right-column -->
+          <!-- closing container -5 div -->
+</div>
+<!-- Closing row div -->
+</div>
+<!-- Closing col div -->
+</div>
+<!-- closing paragraph  -->
+</div>
+
+<!-- Footer -->
+<div class="jumbotron jumbotron-fluid">
+    
+        <p class="footerText">
+            &copy; Copyright 2018 Paolo Andrade
+        </p>
+  </div>
+</body>
+</html>
